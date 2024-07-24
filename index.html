@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e81e2e720e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER PART -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <img src="/images/img2.png" class="logo" alt="Logo">
+                <ul id="sideMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, My Name is <span class="name">Rushikesh</span><br>and I am a passionate</h1>
+                <span id="element"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/profile.jpg" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus mollitia delectus perspiciatis tenetur enim explicabo accusantium vitae ea odio blanditiis modi placeat aliquid itaque asperiores ab quibusdam veniam, fuga perferendis!</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-links" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('certificate')">Certificate</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Java, C/C++, SQL, HTML, CSS, JavaScript</li>
+                            <li><span>Frameworks/Libraries:</span><br>Spring (Spring Boot, Spring MVC), ReactJS, Node.js</li>
+                            <li><span>Databases:</span><br>MySQL, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>C-DAC (March 2023 - Aug 2023)</span><br>Post Graduate Diploma in Advanced Computing</li>
+                            <li><span>PreCAT (Nov 29, 2022)</span><br>Preparatory Course For Entrance Exam</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SKN Sinhgad Institute of Technology And Science (2018-2022)</span><br>Bachelor of Engineering in Information Technology</li>
+                            <li><span>12th HSC (2017-2018)</span><br>Pemraj Sarada College, Ahmednagar</li>
+                            <li><span>10th SSC (2015-2016)</span><br> Anand Vidyalaya, Ahmednagar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quasi voluptatum tenetur nulla deserunt ab atque voluptates neque vitae, sed expedita alias ipsum, quod id labore, dolor repellat at quas.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quasi voluptatum tenetur nulla deserunt ab atque voluptates neque vitae, sed expedita alias ipsum, quod id labore, dolor repellat at quas.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quasi voluptatum tenetur nulla deserunt ab atque voluptates neque vitae, sed expedita alias ipsum, quod id labore, dolor repellat at quas.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="/images/software-developer-6521720_1280.jpg" alt="Portfolio Manager">
+                    <div class="layer">
+                        <h3>Portfolio Manager</h3>
+                        <p>Designed and launched an intuitive Portfolio Manager web app to streamline portfolio and CV creation, updates, and management; boosted user engagement by 60% and decreased update time by 45%.</p>
+                        <a href="https://github.com/rushigadekar2535/PortfolioManagerReactFrontend" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work1.jpg" alt="TextUtils_Ap App">
+                    <div class="layer">
+                        <h3>TextUtils_Ap App</h3>
+                        <p>TextUtils_Ap is a web application that provides various text utility functions such as text case conversion, character count, word count, and more.</p>
+                        <a href="https://github.com/rushigadekar2535/TextUtils_Ap" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work2.jpg" alt="Amazon Clone">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>This repository contains a clone of Amazon's website built using HTML and CSS. The project aims to replicate the basic layout and design of the Amazon homepage, including the header, navigation bar, product listings, and footer.</p>
+                        <a href="https://github.com/rushigadekar2535/Amazon-clone" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="/" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rushikeshgadekar70@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7057640676</p>
+
+                    <div class="social-icons">
+                        <a href="/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rushikesh-gadekar-464b6922a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rushigadekar2535" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/images/my_CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rushikesh, Made with <i class="fa-solid fa-heart"></i> by Rushi Gadekar</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwt1XSsZx1ycRiSfGwjsbtidUv7ILmxFDOEFnOeS27lxzA5sznqpiYZ842NFKi6eHaWwA/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(()=>{
+                    msg.innerHTML = "";
+                },2000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
